@@ -1,0 +1,16 @@
+#This is the readme for starnival:
+
+I created this repository on github to keep track of my progress in the python challenge
+The python challenge is a programming challenge of 30+ levels designed to test your knowledge of Python
+The URL is http://www.pythonchallenge.com/ 
+
+I will upload my solutions to each level. They will be labeled: python_challenge_xxx.py where xxx is the level 
+(ex. level 5 is python_challenge_005.py). I'm doing this because I'd like to learn Python and I like solving riddles.
+
+One of the reasons I'm using git is that I never thought about saving any code or proof of my ability to program
+including my Computer Science master's project in C++ :-(. I'm starting from scratch in hopes of becoming a 
+better developer. Please feel free to message me at mike.claveria@gmail.com if you have any comments. Criticism is 
+welcome as I'm hoping to improve and I'm inexperienced in python. 
+
+I may have other files to import in order to solve the puzzle. I'll include
+these files in the git as well.  
