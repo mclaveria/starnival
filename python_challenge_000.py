@@ -6,4 +6,3 @@
 print 2**38
 
 #result is 274877906944
-#test message
