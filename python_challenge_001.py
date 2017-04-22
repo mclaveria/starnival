@@ -20,11 +20,11 @@ with open('pc_001_message.txt','r') as f:
 alphabet = string.ascii_lowercase
 #get the letters shifted by two aka c..z,a,b
 alphabetSh = alphabet.lstrip('ab')+'ab'
-print ('The alphabet is: ' + alphabet)
-print ('The shifted alphabet is: ' + alphabetSh)
-print ('The coded message is: ' + scram_txt)
+print 'The alphabet is: ' + alphabet
+print 'The shifted alphabet is: ' + alphabetSh
+print 'The coded message is: ' + scram_txt
 #map the letters in the coded message a->c, b->d, ...x->z, y->a, z->b
-table = str.maketrans(alphabet,alphabetSh)
+table = string.maketrans(alphabet,alphabetSh)
 print (scram_txt.translate(table))
 ##################################################################
 #result:
@@ -37,5 +37,5 @@ print (scram_txt.translate(table))
 
 #url file ending is map:
 
-print ('final result is: '+'map'.translate(table))
+print ('map'.translate(table))
 #result is ocr
