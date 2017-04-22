@@ -8,7 +8,7 @@
 #@##&{#&{&)*%(]{{([*}@[@&]+!!*{)!}{%+{))])[!^})+)$]#{*+^((@^@}$[**$&^{$!@#$%)!@(&
 #+^!{%_$&@^!}$_${)$_#)!({@!)(^}!*^&!$%_&&}&_#&@{)]{+)%*{&*%*&@%$+]!*__(#!*){%&@++
 
-#use collections for counting the symbol occurances
+#use collections for counting the symbols
 import collections
 
 #read in txt file
@@ -18,25 +18,26 @@ with open('pc_002.txt', 'r') as f:
 #go through each character in the txt file and count the number of 
 # instances that it occurs
 
-results = collections.OrderedDict()
+res = collections.OrderedDict()
 for c in data:
-	results[c] = results.get(c,0) + 1
+	res[c] = res.get(c,0) + 1
 #	print results[c]
 
-#define rare occurence as below a given percent (used one percent at first)
+#define rare as below a given percent (used one percent at first)
 
-percent = 1
+perc = 1
 #define the lower bound as the num of occ below x percent of total length
-lb = percent * .001 * len(data)
+lb = perc * .001 * len(data)
 
 #append the rare symbol to string if it appears less than lb times in the text
-print ''.join([c for c in data if results[c] < lb])
-
+#ans = (''.join([c for c in data if results[c] < lb])
+print('result is: ')
+print(''.join([c for c in data if res[c] < lb]))
 #result is 'equality'
 
 #######################################
 #Notes:
-#orginally I used collections.Counter to count occurances but the letters are
+#originally I used collections.Counter to count occurrences but the letters are
 #not in order so even though I know the letters are 'aeilquty' I can't be 
 #sure of the order (even though equality is pretty obvious!) instead I
 #used OrderedDict() to get the count in order

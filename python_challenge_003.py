@@ -24,6 +24,7 @@ with open('pc_003.txt','r') as f:
 #   ([a-z]) is the lowercase letter to find
 #   (?![A-Z]) is a look forward letter not between A-Z (uppercase)
 result = re.findall('(?<![A-Z])[A-Z]{3}([a-z])[A-Z]{3}(?![A-Z])',data)
-print ''.join([c for c in result])
+print('Result is: ')
+print (''.join([c for c in result]))
 
 #linkedlist is the printed final answer
